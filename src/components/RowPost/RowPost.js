@@ -7,6 +7,7 @@ import axios from '../../axios'
 function RowPost(props) {
     const [movies, setmovies] = useState([])
     const [urlId,setUrlId] = useState('')
+    // const [randNum,setrandNUm] = useState(0)
     useEffect(() => {
         axios.get(props.url).then((response) => {
             console.log(response.data);
